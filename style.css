@@ -1,0 +1,45 @@
+html{
+    margin: 0;
+    background-color: rgb(125, 155, 145);
+}
+
+#menu_principal{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+    text-align: center;
+}
+
+li{
+    float: inline-end;
+    padding: 18px 18px 22px 18px;
+    transition: 800ms;
+}
+
+li:hover{
+    background-color: #a4a9ac8d;
+    transform: scale(1.01);
+}
+
+li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+fieldset{
+    width: 300px;
+    margin: 0;
+}
+
+legend{
+    font-size: 20px;
+    text-align: center;
+}
+
+#box{
+    margin-left: 37%;
+    margin-top: 15%;
+}
