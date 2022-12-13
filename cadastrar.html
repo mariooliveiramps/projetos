@@ -9,14 +9,31 @@
 </head>
 <body>
     <div id="box">
-        <fieldset>
-            <legend>Menu Principal</legend>
-            <ul id="menu_principal">
-                <li><a href="/cadastrar.html">Cadastrar Funcionário</a></li>
-                <li><a href="/consultar.html">Consultar Funcionário(s)</a></li>
-                <li><a href="/remover.html">Remover Funcionário</a></li>
-            </ul>   
-        </fieldset>    
+        <form action="">
+            <fieldset>
+                <legend>Menu Principal</legend>
+
+                <div class="cadastrar">
+                    <label for="">Nome do funcionário</label>
+                    <input class="name" type="text"> <br>
+                    <div class="linha">
+                        <div class="col-50">
+                            <label for="">Setor do funcionário</label>
+                            <input class="setor" type="text"> <br>
+                        </div>
+                        
+                        <div class="col-50">
+                            <label for="">Salario do funcionário</label>
+                            <input class="salario" type="text"> <br>
+                        </div>
+                    </div>
+                </div> <br>
+                <div class="botao">
+                    <input type="button" value="Confirmar">
+                </div>
+            </fieldset>
+        </form>
+           
     </div>   
 </body>
 </html>

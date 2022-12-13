@@ -39,7 +39,56 @@ legend{
     text-align: center;
 }
 
+label{
+    float: left;
+}
+
 #box{
     margin-left: 37%;
     margin-top: 15%;
+}
+
+.cadastrar{
+    text-align: center;
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+}
+  
+.col-50 {
+    width: 50%;
+    line-height: 30px;
+}
+
+.name{
+    width: 300px;
+}
+
+.setor{
+    width: 145px;
+    float: left;
+}
+
+.salario{
+    width: 145px;
+    float: right;
+}
+
+input[type=text]{
+    border-radius: 3px;
+    border: 0;
+    height: 22px;
+}
+
+.botao{
+    text-align: center;
+}
+
+input[type=button]{
+    border-radius: 3px;
+    border: 0;
+    height: 22px;
+    width: 150px;
 }
