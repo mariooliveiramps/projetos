@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
+/*Variavel de cores*/
+:root{
+    --color-light-50: #e1e4e1;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-padrao-50: #020024;
+    --color-padrao-100: #097926;
+    --color-padrao-200: #00d4ff;
+    /*Gradient de cores*/
+    --color-gradient: linear-gradient(90deg, var(--color-padrao-50), var(--color-padrao-100), var(--color-padrao-200));
+}
+
+*{
+    font-family: 'Stardos Stencil', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu{
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 25px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+
+#form_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form_header h1{
+    font-size: 30px;
+    position: relative;
+    color: rgb(26, 24, 24);
+}
+
+#form_header h1::before{
+    position: absolute;
+    content: '';
+    width: 80%;
+    background-color: var(--color-padrao-100);
+    height: 3px;
+    bottom: 5px;
+    border-radius: 5px;
+}
+
+#mode_icon{
+    padding-left: 60px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#opcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 4vh;
+    border-radius: 4px;
+    color: rgb(26, 24, 24);
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.buttom:hover{
+    background-color: #b5ccb5;
+    transform: scale(1.01);
+}
