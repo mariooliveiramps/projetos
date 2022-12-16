@@ -4,36 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Cadastrar Funcionário</title>
 </head>
 <body>
-    <div id="box">
-        <form action="">
-            <fieldset>
-                <legend>Menu Principal</legend>
-
-                <div class="cadastrar">
-                    <label for="">Nome do funcionário</label>
-                    <input class="name" type="text"> <br>
-                    <div class="linha">
-                        <div class="col-50">
-                            <label for="">Setor do funcionário</label>
-                            <input class="setor" type="text"> <br>
-                        </div>
-                        
-                        <div class="col-50">
-                            <label for="">Salario do funcionário</label>
-                            <input class="salario" type="text"> <br>
-                        </div>
-                    </div>
-                </div> <br>
-                <div class="botao">
-                    <input type="button" value="Confirmar">
-                </div>
-            </fieldset>
+    <main id="container">
+        <form action="" id="menu">
+            <div id="form_header">
+                <h1>Cadastrar Funcionário</h1>
+                <i id="mode_icon" class="fa-solid fa-moon"></i>
+            </div>
+            <div id="opcao">
+                <label for="">Nome:</label>
+                <input type="text">
+                <label for="">Setor:</label>
+                <input type="text">
+                <label for="">Salário:</label>
+                <input type="text">
+            </div>
         </form>
-           
-    </div>   
+    </main>
 </body>
 </html>
