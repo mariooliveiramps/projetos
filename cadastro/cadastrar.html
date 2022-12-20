@@ -16,14 +16,45 @@
                 <i id="mode_icon" class="fa-solid fa-moon"></i>
             </div>
             <div id="opcao">
-                <label for="">Nome:</label>
-                <input type="text">
-                <label for="">Setor:</label>
-                <input type="text">
-                <label for="">Salário:</label>
-                <input type="text">
+                <div class="input-box">
+                    <label for="name">
+                        Name
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="setor">
+                        Setor
+                        <div class="input-field">
+                            <i class="fa-solid fa-building"></i>
+                            <select name="setor" id="setor">
+                                <option value="" selected disabled>Selecione o setor</option>
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="salario">
+                        Salário
+                        <div class="input-field">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                            <input type="text" id="salario" name="salario">
+                        </div>
+                    </label>
+                </div>
             </div>
+            <button type="submit" id="cadastrar_button">
+                Cadastar
+            </button>
         </form>
     </main>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 </html>
