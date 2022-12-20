@@ -6,7 +6,7 @@
 
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
-    --color-dark-900: #000;
+    --color-dark-900: rgb(36, 34, 34);
 
     --color-padrao-50: #020024;
     --color-padrao-100: #097926;
@@ -31,6 +31,7 @@
     justify-content: center;
 }
 
+/*Estilização do menu*/
 #menu{
     background-color: var(--color-light-50);
     display: flex;
@@ -72,11 +73,57 @@
 
 #opcao{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.input-box>label{
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    border-bottom: 1px solid var(--color-padrao-100);
+    cursor: text;
+}
+
+.input-field i{
+    font-size: 18px;
+    cursor: text;
+    color: var(--color-dark-900);
+} 
+
+.input-field input{
+    border: none;
+    width: 330px;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field input:focus{
+    outline: none;
+}
+
+.input-field select{
+    appearance: none;
+    border: none;
+    width: 330px;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+.input-field select:focus{
+    outline: none;
+}
+
 
 .buttom{
     display: flex;
@@ -94,4 +141,33 @@
 .buttom:hover{
     background-color: #b5ccb5;
     transform: scale(1.01);
+}
+
+#cadastrar_button{
+    border: none;
+    background: var(--color-gradient);
+    padding: 7px;
+    border-radius: 3px;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#cadastrar_button:hover{
+    transform: scale(1.01);
+}
+
+.dark#menu {
+    color: var(--color-light-50);
+    background-color: var(--color-dark-900);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#menu .input-field input,
+.dark#menu .input-field i,
+.dark#menu h1,
+.dark#menu a{
+    color: var(--color-light-50);
 }
